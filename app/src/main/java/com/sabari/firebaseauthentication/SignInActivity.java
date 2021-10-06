@@ -3,6 +3,7 @@ package com.sabari.firebaseauthentication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -20,6 +21,12 @@ public class SignInActivity extends AppCompatActivity {
         password = findViewById(R.id.etSignPassword);
         signIn = findViewById(R.id.btSignSignIn);
 
+        signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
 
 
