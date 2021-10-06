@@ -56,7 +56,7 @@ public class SignUpActivity extends AppCompatActivity {
                             finish();
 
                         }else{
-                            Toast.makeText(SignUpActivity.this, "Your Account is Created", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignUpActivity.this, "Please Check your details", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
