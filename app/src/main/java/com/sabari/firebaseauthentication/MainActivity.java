@@ -14,11 +14,12 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText email,password;
-    Button signIn,signUp;
+    Button signIn,signUp,forgotPassword;
 
     FirebaseAuth auth = FirebaseAuth.getInstance();
 
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.etPassword);
         signIn = findViewById(R.id.btSignIn);
         signUp = findViewById(R.id.btSignUp);
+        forgotPassword = findViewById(R.id.BtForgotPassword);
 
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +48,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, SignUpActivity.class);
                 startActivity(i);
+            }
+        });
+
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this,ForgotPassword.class);
+                startActivity(i);
+
             }
         });
 
@@ -70,4 +81,14 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = auth.getCurrentUser();
+        if(user!= null){
+            Intent i = new Intent(MainActivity.this,MainMenu.class);
+            startActivity(i);
+            finish();
+        }
+    }
 }

@@ -2,6 +2,7 @@ package com.sabari.firebaseauthentication;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.DragStartHelper;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -62,6 +63,8 @@ public class SignUpActivity extends AppCompatActivity {
                 });
 
     }
+
+
 
 
 
