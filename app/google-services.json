@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "52646325537",
+    "firebase_url": "https://authentication-6e686-default-rtdb.firebaseio.com",
+    "project_id": "authentication-6e686",
+    "storage_bucket": "authentication-6e686.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52646325537:android:a8a04b9696fb092d81a260",
+        "android_client_info": {
+          "package_name": "com.sabari.firebaseauthentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52646325537-qo1l9nqvu14d5qiqqecq2e11f1ps2uic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl-ArN4ld2-KJ7j_XN0LaHSztCcNeAIik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52646325537-qo1l9nqvu14d5qiqqecq2e11f1ps2uic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
