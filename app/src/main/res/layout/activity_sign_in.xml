@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etEmailAddress" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btSignSignIn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="54dp"
